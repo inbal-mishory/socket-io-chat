@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Websockets chat app</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <link href="/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="mario-chat">
+       <h2>Inbal's Socket.IO chat app</h2>
+       <div id="chat-window">
+           <div id="output"></div>
+       </div>
+       <input id="handle" type="text" placeholder="Handle" />
+       <input id="message" type="text" placeholder="Message" />
+       <div class="formBtns">
+         <button onclick="location.href='index.html'" id="back">Back</button><button id="send">Send</button>
+       </div>
+   </div>
+   <script src="/chat.js"></script>
+  </body>
+</html>
