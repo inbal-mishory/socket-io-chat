@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sr-Latn-u-em-emoji">
   <head>
     <meta charset="utf-8">
     <title>Websockets chat app</title>
@@ -8,16 +8,48 @@
     <link href="/style.css" rel="stylesheet"/>
   </head>
   <body>
+    <header>
+      <h1>Inbal's Socket.IO chat app</h1>
+    </header>
     <div id="mario-chat">
-       <h2>Inbal's Socket.IO chat app</h2>
        <div id="chat-window">
            <div id="output"></div>
        </div>
-       <input id="handle" type="text" placeholder="Handle" />
-       <input id="message" type="text" placeholder="Message" />
-       <div class="formBtns">
-         <button onclick="location.href='index.html'" id="back">Back</button><button id="send">Send</button>
+       <div class="controls">
+         <input id="handle" type="text" placeholder="Handle" />
+         <input id="message" type="text" placeholder="Message" />
+         <img src="happiness.png" id="emojiBtn">
+         <div class="formBtns">
+           <button onclick="location.href='index.html'" id="back">Back</button><button id="send">Send</button>
+         </div>
        </div>
+   </div>
+   <div id="emojiSelect">
+       <span data-emoji="😀">😀</span><span data-emoji="😁">😁</span><span data-emoji="😂">😂</span>
+       <span data-emoji="😃">😃</span><span data-emoji="😄">😄</span><span data-emoji="😅">😅</span>
+       <span data-emoji="😆">😆</span><span data-emoji="😉">😉</span><span data-emoji="😊">😊</span>
+       <span data-emoji="😋">😋</span><span data-emoji="😎">😎</span><span data-emoji="😍">😍</span>
+       <span data-emoji="😘">😘</span><span data-emoji="😗">😗</span><span data-emoji="😙">😙</span>
+       <span data-emoji="😚">😚</span><span data-emoji="🙂">🙂</span><span data-emoji="😐">😐</span>
+       <span data-emoji="😑">😑</span><span data-emoji="😶">😶</span><span data-emoji="🙄">🙄</span>
+       <span data-emoji="😏">😏</span><span data-emoji="😣">😣</span><span data-emoji="😥">😥</span>
+       <span data-emoji="😮">😮</span><span data-emoji="😯">😯</span><span data-emoji="😪">😪</span>
+       <span data-emoji="😫">😫</span><span data-emoji="😴">😴</span><span data-emoji="😌">😌</span>
+       <span data-emoji="😛">😛</span><span data-emoji="😜">😜</span><span data-emoji="😝">😝</span>
+       <span data-emoji="😒">😒</span><span data-emoji="😓">😓</span><span data-emoji="😔">😔</span>
+       <span data-emoji="😕">😕</span><span data-emoji="🙃">🙃</span><span data-emoji="😲">😲</span>
+       <span data-emoji="🙁">🙁</span><span data-emoji="😖">😖</span><span data-emoji="😞">😞</span>
+       <span data-emoji="😟">😟</span><span data-emoji="😤">😤</span><span data-emoji="😢">😢</span>
+       <span data-emoji="😭">😭</span><span data-emoji="😦">😦</span><span data-emoji="😧">😧</span>
+       <span data-emoji="😨">😨</span><span data-emoji="😩">😩</span><span data-emoji="😬">😬</span>
+       <span data-emoji="😰">😰</span><span data-emoji="😱">😱</span><span data-emoji="😳">😳</span>
+       <span data-emoji="😵">😵</span><span data-emoji="😠">😠</span><span data-emoji="😷">😷</span>
+       <span data-emoji="😇">😇</span>
+   </div>
+   <div id="appMsg">
+     <p>
+       Please input handle and message.
+     </p>
    </div>
    <script src="/chat.js"></script>
   </body>
